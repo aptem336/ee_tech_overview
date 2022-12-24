@@ -1,0 +1,18 @@
+### http://localhost:8080/transaction?wsdl
+### http://localhost:8080/transaction?xsd=1
+
+POST http://localhost:8080/transaction
+Content-Type: text/xml
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://jws.dyachenko.com/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ws:addTransaction>
+            <arg0>
+                <outcomeAccountId>1</outcomeAccountId>
+                <incomeAccountId>2</incomeAccountId>
+                <sum>1000</sum>
+            </arg0>
+        </ws:addTransaction>
+    </soapenv:Body>
+</soapenv:Envelope>
