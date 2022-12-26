@@ -1,0 +1,1 @@
+wsimport -keep -Xnocompile http://localhost:8080/transaction?wsdl -b binding.xml -p com.dyachenko.async -d ../java
