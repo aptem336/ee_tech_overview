@@ -1,10 +1,10 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="SOAPService" type="Application" factoryName="Application">
-    <option name="MAIN_CLASS_NAME" value="com.dyachenko.jws.ServicePublisherSoap" />
+  <configuration default="false" name="RestService" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.dyachenko.jwsrs.ServicePublisherRest" />
     <module name="ee_tech_overview" />
     <extension name="coverage">
       <pattern>
-        <option name="PATTERN" value="com.dyachenko.jws.*" />
+        <option name="PATTERN" value="com.dyachenko.jwsrs.*" />
         <option name="ENABLED" value="true" />
       </pattern>
     </extension>

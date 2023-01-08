@@ -1,7 +1,7 @@
-### http://localhost:8080/transaction?wsdl
-### http://localhost:8080/transaction?xsd=1
+### http://localhost:8080/soap/transaction?wsdl
+### http://localhost:8080/soap/transaction?xsd=1
 
-POST http://localhost:8080/transaction
+POST http://localhost:8080/soap/transaction
 Content-Type: text/xml
 
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://jws.dyachenko.com/">
