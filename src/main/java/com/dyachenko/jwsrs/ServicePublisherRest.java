@@ -8,7 +8,7 @@ import java.net.URI;
 
 public class ServicePublisherRest {
     public static void main(String[] args) {
-        JdkHttpServerFactory.createHttpServer(URI.create("http://localhost:8080/rest/"),
+        JdkHttpServerFactory.createHttpServer(URI.create("http://localhost:8090/rest/"),
                 new ResourceConfig().register(TransactionServiceRest.class).register(JacksonFeature.class));
     }
 }
