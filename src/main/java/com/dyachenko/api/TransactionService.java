@@ -17,6 +17,8 @@ public interface TransactionService {
                 ACCOUNTS_STATE.get(transaction.getOutcomeAccountId()) - transaction.getSum());
         ACCOUNTS_STATE.put(transaction.getIncomeAccountId(),
                 ACCOUNTS_STATE.get(transaction.getIncomeAccountId()) + transaction.getSum());
-        return new AccountsState(ACCOUNTS_STATE);
+        AccountsState accountsState = new AccountsState();
+        accountsState.setState(ACCOUNTS_STATE);
+        return accountsState;
     }
 }
